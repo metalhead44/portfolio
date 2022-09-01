@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/font-awesome.min.css">-->
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+h1:hover,h2,h3,h4:hover {
+  color: yellow;
+}
+</style>
+</head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="img/portrait_Bokeh.png" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa-solid fa-user w3-xlarge"></i>
+    <p>ABOUT ME</p>
+  </a>
+  <a href="#resume" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xlarge"></i>
+    <p>RESUME</p>
+  </a>
+  <a href="#testimonials" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xlarge"></i>
+    <p>TESTIMONIALS</p>
+	</a>
+  <a href="#articles" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xlarge"></i>
+    <p>ARTICLES</p>
+	</a>
+	<a href="#repository" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xlarge"></i>
+    <p>REPOSITORY</p></a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xlarge"></i>
+    <p>CONTACT</p>
+  </a>  
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+	<a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">RESUME</a>
+	<a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">ARTICLES</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Nitin Rohidas.</h1>
+    <p>Solutions Architect.</p>
+    <img src="img/portrait_Bokeh.png" alt="boy" class="w3-image" width="600" height="600">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="about">
+    <h2 class="w3-text-light-grey w3-hover-text-yellow">About Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Hello , my name is Nitin Rohidas and welcome to my website !! I’m a techie who’s passionate about open source software, cloud, software architecture, writing and whimsy. I currently work for HSBC as a Senior Software Architect in India, Pune.
+	</p>
+	<h3 class="w3-text-light-grey">My Story </h3>
+	<p>
+	I did my Bachelor's degree in Information Technology (IT) and got campus placement to work as a Java developer in HSBC Software Development India, Pune. The initial years of my developer experience primarily involved working in the Servlets, JSP and the J2EE stack using MVC frameworks. I was an above average developer and used to get the things done with good quality.I played the role of a defect prevention champion and also enjoyed critical defect fixings of frameworks level defects as well as aged functional defects of the system.
+	</p>
+	<p>I progressed my career by learning newer technologies like Spring , Spring boot, DustJs & webservices etc ,eventually playing the role of Technical lead.As a Technical Lead my job involved handling my own coding tasks plus solving the problems of the teammates and also coaching them.I started taking up additional responsibility of SCRUM management as well, but didn't like it that much. Delivered some critical projects in extreme pressure situations which got the best out of me but burnt me out as well.
+              I spent good time in performance improvement programs and became an expert on resolving performance issues using Dynatrace tool to analyse high CPU programs which saved considerable $$$ for my organization.
+              My design skills and deeper understanding of design patterns, Microservices exposure & frequent representation in the architecture and design approval meetings/forums got me enough exposure & expertise to get promoted to the Architecture Role.I was leading Architecture work for 3 teams on their architectural roadmaps and EPIC/Feature designs in the Scaled Agile Framework.I was also an active speaker/participant in organization's Tech events , contributing to Innovation initiatives & conducted many technical sessions for the developer community.
+              I wasn't spared from interviewing candidates on Architecture and Leadership roles on weekends and weekdays for critical positions and new teams setup.Earned lot of appreciations on my work from the Home office Architecture team.
+			</p>
+			
+<p>After a while, I thought to look for a change as I was excited to work on Cloud Technologies like AWS, GCP.
+  Fortunately, I was able to seize opportunities by upskilling myself by self learning Docker and Kubernetes.I will strongly recommend "Kubernetes in Action" book to start on Kubernetes.
+  I was now working on core engineering projects like migration from PCF to On-Prem Kubernetes.I was leading the migration effort by doing the POC and also guiding teams by taking up sessions and publishing blogs on Kubernetes & best practices.
+  As of today, am the SME in the On-boarding & Data domain supporting big clients from Global & Commercial banking.Working as a Lead Architect and contributing in the Reference Architectures, API Standards , API Governance & Digital transformation, Workflow management & Containerization space.
+  I like to work on clear choice papers and currently working on publishing a White Paper on Observability Strategy </p>
+
+<p>
+My recent exploration in Open Telemetry space has got me in to the Observability space.I am helping teams understand how and learn OpenTelemetry. Do read my <a href="#writing">articles on medium !!</a>
+</p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+	<div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+    <p class="w3-wide">SpringBoot</p>
+    <div class="w3-white">
+      <div class="w3-yellow" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Docker</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Kubernetes</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+	<p class="w3-wide">API Designing</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">API Governance</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+	</div>
+	
+      <div class="w3-half w3-margin-bottom">
+	
+    <p class="w3-wide">Microservices</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+	<p class="w3-wide">OpenTelemetry</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Architecture & Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+	<p class="w3-wide">Architecture & Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+	<p class="w3-wide">Architecture & Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+    </div>
+	</div>
+	
+	<h3 class="w3-padding-16 w3-text-light-grey">Interests & Hobbies</h3>
+	<div class="w3-row">
+	<div class="w3-quarter w3-center w3-padding-small">
+		<div class="w3-light-grey w3-hover-shadow w3-padding-32 w3-center">
+			<p><i class="fa fa-map-marker fa-fw w3-text-white w3-large"></i> Chicago, US</p>
+		</div>
+	</div>
+	<div class="w3-quarter w3-center w3-padding-small">
+		<div class="w3-light-grey w3-hover-shadow w3-padding-32 w3-center">
+			<p><i class="fa fa-map-marker fa-fw w3-text-black w3-large"></i> Chicago, US</p>
+		</div>
+	</div>
+	<div class="w3-quarter w3-center w3-padding-small">
+		<div class="w3-light-grey w3-hover-shadow w3-padding-32 w3-center">
+			<p><i class="fa fa-map-marker fa-fw w3-text-white w3-large"></i> Chicago, US</p>
+		</div>
+	</div>
+	<div class="w3-quarter w3-center w3-padding-small">
+		<div class="w3-light-grey w3-hover-shadow w3-padding-32 w3-center">
+			<p><i class="fa fa-map-marker fa-fw w3-text-white w3-large"></i> Chicago, US</p>
+		</div>
+	</div>
+	</div>   
+
+       
+    
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">Testimonials </h3>
+	<div class="w3-col-padding">
+	<div class="w3-dark-grey w3-padding w3-hover-yellow	" >
+<img src="img/Patrick.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Patrick Utz.</span>Technical Product Manager at Principal Financial Group.</p>
+    <p> I have worked with Nitin for the past 3 years at the Principal Financial Group. Nitin was playing a Solution Architect role helping 3 of our Pune India scrum teams break down work, solution ideas for implementation, code review, education, understand our core architecture patterns, and be forward thinking and keep our developer staff moving in the right direction. Our business concepts are very complex in the financial services business, especially around investments, fee/expense calculations, discounts, and collection. Nitin was very sharp and could tackle any problems. Nitin's architecture knowledge grew a lot in the 3 years of working with him, especially around REST and Pub/Sub architecture patterns. He has always had great communication with our US and Pune staff and he has grown to be very well respected in our department. Nitin recently announced he is moving to another company and we will miss his leadership, ideas, and fun personality dearly! .</p><br>
+	</div><br>
+	<div class="w3-dark-grey w3-padding w3-hover-light-grey" >
+    <img src="img/himadri.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Himadri Das.</span> Architect at Principal,Pune.</p>
+    <p>Nitin has very clear concepts and so it is easy to collaborate with him. He brings in not only what to do , but takes a lot of interest in how to do it and helps team at the ground level. I find his question and thought-process very intuitive and he is quick to lead conversations in right direction so that the problem is solved in right way, with minimum fuss. 
+He is well-versed in Java, Design patterns, Architectural styles, Cloud Tech Stack, front end tech-stack , His understanding of working with legacy or modern systems is very good. .</p>
+    </div><br>
+	<div class="w3-panel w3-leftbar w3-light-grey" >
+    <img src="img/robstout.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Rob Stout.</span> Assistant Director of Engineering, Prncipal Financial Group, USA.</p>
+    <p><i class="w3-serif w3-large">
+  
+   Nitin was a great teammate during our time working together. He asked detailed questions and provided analysis/design solutions during larger product builds.
+
+Nitin was able to collaborate with all teammates regardless of level. He was able to communicate direction and ensure timing was being met. He worked on complex solutions that helped drive revenue for the company. 
+
+I would gladly work with Nitin again in the future and would recommend him in a IT lead and/or Solutions role..</i></p>
+</div>
+<br>
+<div class="w3-dark-grey w3-padding w3-hover-light-grey" >
+<img src="img/Nishant.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Nishant Jadhav.</span> Assistant Vice President at Citi, Pune.</p>
+    <p>Nitin might be the most analytical person I know. He is always fast to respond, intelligent and comes up with creative solutions to difficult problems.
+He is my person to-go for the techno professional problems. He was always available when needed and did not hesitate to share his knowledge.
+I’d gladly work with Nitin again.</p>
+</div><br>
+<div class="w3-dark-grey w3-padding w3-hover-light-grey w3-round-large" >
+<img src="img/Ajay.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Ajay Shah.</span> Program Manager at Principal Global Services.</p>
+	<i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
+    <p>Nitin is a perspective abundant. It's what makes him look at things from multiple aspects and have a good discussion before decision. A very important quality that helps him build answers and solutions at workplace and personally. A very good team member and ready to go a mile to help as he keeps team first. Great to have a colleague like him</p><br>
+  <!-- End About Section -->
+  </div>
+  </div>
+  </div>
+  <!-- Resume Section -->
+  <div class="w3-padding-16 w3-content" id="resume">
+  <!-- Grid for resume tables -->
+	<h3 class="w3-padding-16 w3-text-light-grey">My Resume</h3>
+	<button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button> 
+	<div class="w3-row-padding" style="margin:0 -16px">
+	<div class="w3-half w3-margin-bottom">
+	<div class="w3-container w3-card w3-light-grey w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>SENIOR SOLUTION ARCHITECT / HSBC India , Pune</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>JUNE 2020 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <h5> DSAAC </h5>
+            <p>DSAAC is an External Data sourcing application specialized in sourcing external data for the enterprise as a single point of truth, hiding complexity by connecting to multiple vendor systems and exchanges</p>
+            <p><em>I was mainly tasked with building it from scratch </em></p>
+            <p>
+              <ul>
+                <li>Complete Architecture of the product from scratch</li>
+                <li>Microservices Architecture design and implementation</li>
+                <li>Scalability for handling 30,000 requests with on-prem capacity</li>
+                <li>Batch processing subsystems to handle load</li>
+                <li>Introduced Asynchronous processing using Event Driven Architecture patterns</li>
+				<li>Currently working on migration to GKE Cloud</li>
+              </ul>
+            </p>
+			<h5> CLUB </h5>
+			<p>Built a product named CLUB ( Client Onboarding) product from scratch which is a workflow system to manage onboarding tasks for Global Banking and Commercial banking customers </p>
+            <p><em>I was mainly tasked with building it from scratch, involving following responsibility </em></p>
+            <p>
+              <ul>
+                <li>Design & Architecture of the product from scratch</li>
+                <li>Used Microservices Architecture design</li>
+				<li>Technology choice to use <em>Activiti</em> opensource framework </li>
+                <li>Document storage solution decision paper</li> 
+				</ul>
+            </p>
+            <p><em>I am also API lead for my GB/GF, responsible for  </em></p>
+            <p>
+              <ul>
+                <li>Automation of API Governance Activities</li>
+                <li>Building Tooling Capabilities for API governance</li>
+                <li>Revewing API and ensuring they meet HSBC standards</li>
+                <li>Collaborating on API initatives across the banks</li>
+			  </ul>
+            </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Solution Architect / PRINCIPAL GLOBAL SERVICES, PUNE</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>MARCH 2016 — JUNE 2020</h6>
+          <p>Providing Solutions to team of 25 people (3 teams) on their daily business features. Focus on value addition along with the usual business ask with Engineering mindset</p>
+			  <p>
+              <ul>
+                <li>Played an instrumental role in mentoring team of 5 Leads and upcoming architects and setting up Architecture grooming discipline</li>
+                <li>Hands on with Preparing Solution Architecture documentations covering Conceptual and Logical Architecture Diagrams, Application level design & UML documentations, Architecture Risk Assessments</li>
+                <li>Solution a complete modernization effort by transforming an internal JSF based legacy app to spring MVC and Dust application using API and Elastic Search</li>
+                <li>Leading efforts in transitioning enterprise architecture from Monolithic to Micro Service based while adopting all better DevOps practices</li>
+              </ul>
+            </p>
+			</div>
+			  <div class="resume-item">
+            <h4>System Expert/Solution Lead</h4>
+            <h5>DECEMBER 2012 — MARCH 2016</h5>
+            <p><em>PRINCIPAL GLOBAL SERVICES, PUNE</em></p>
+            <p>I held the position of a Solution Lead tasked to create an application using a workflow solution like IBPM</p>
+			  <p>
+              <ul>
+                <li>Lead multiple teams while mentoring and helping them on all technical deliveries for different Web Solutions</li>
+                <li>Delivered numerous web products while working on different web technologies ranging from legacy XSLT, COBOL to JSF to new Spring Technology stacks.</li>
+                <li>Designed and developed an application supporting a huge business process using IBPM and JSF. Implemented a validation framework using JSR-303 Bean Validation framework</li>
+                <li>Leading efforts in transitioning enterprise architecture from Monolithic to Micro Service based while adopting all better DevOps practices</li>
+              </ul>
+            </p>
+          <hr>
+        </div>
+       
+      </div>
+	</div>
+	<div class="w3-half">
+	 <div class="w3-container w3-card w3-light-grey">
+	 
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-yellow"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Vivekanand Education Society’s Institute of Technology – Information Technology , chembur, Mumbai</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>OCTOBER 2016 — FEBRUARY 2019</h6>
+          <p>BACHELOR OF INFORMATION TECHNOLOGY</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>V.G VAZE College , Mulund , Mumbai</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>JULY 1999 — MARCH 2001</h6>
+          <p>HIGH SCHOOL BOARD</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>VANI VIDYALAYA , MULUND, Mumbai</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>JULY 1998 — MARCH 1999</h6>
+          <p>SSC BOARD</p><br>
+        </div>
+	</div>
+	<br>
+	<div class="w3-container w3-card w3-light-grey">
+	 
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-yellow"></i>Conferences & Trainings</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>GOOGLE CLOUD PROFESSIONAL ARCHITECT</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>November 2021</h6>
+          <p>Udemy</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>GOOGLE KUBERNETES ENGINE</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>JULY 1999 — MARCH 2001</h6>
+          <p>Udemy</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>CONCLAVE - MICRO SERVICES</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>JULY 1998 — MARCH 1999</h6>
+          <p>NASSCOM</p><br>
+        </div>
+		<div class="w3-container">
+          <h5 class="w3-opacity"><b>CONFERENCES: HANDLING DATA OF ORGANIZATION</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>November 2020</h6>
+          <p>NASSCOM</p><br>
+        </div>
+		<div class="w3-container">
+          <h5 class="w3-opacity"><b>MAKERS LAB: AI CHABOTS</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>November 2018</h6>
+          <p>Tech Mahindra</p><br>
+        </div>
+		<div class="w3-container">
+          <h5 class="w3-opacity"><b>DESIGN THINKING WORKSHOP</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2018</h6>
+          <p>External Training</p><br>
+        </div>
+	</div>
+	<br>
+	<div class="w3-container w3-card w3-light-grey">
+	 
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-yellow"></i>Organization Level Contributions</h2>
+        <p>	 
+              <ul>
+                <li>Active member of the API Review Board , helping with reviews of High Risk API for adherence to standards and quality measures</li>
+                <li>Driving <span class="w3-text-yellow">API Governance</span> by creating automated tools for discoverability and API catalogue, Dashboards etc</li>
+                <li>Technical Speaker in Accelerate 2021 -Architecture symposium - presented a topic on <span class="yellow-text">Demystifying Containers"</span></li>
+                <li>Undertook Sessions on <span class="w3-text-yellow">Kubernetes </span>for the Business Unit after successful POC</li>
+				<li>Active in recruitment of Architecture and other Senior Technical Dev Roles</li>				
+              </ul>
+            </p>
+	</div>
+	</div>
+  </div>
+  </div>
+  <!-- Repository Section -->
+  <div class="w3-padding-64 w3-content" id="repository">
+    <h2 class="w3-text-light-grey">My Repositories</h2>
+    <hr style="width:200px" class="w3-opacity">
+	<div class="w3-row">
+		<div class="w3-quarter w3-center w3-padding-small">
+			<div class="w3-light-grey w3-hover-shadow w3-padding-32 w3-center">
+				<header class="w3-container w3-gray">
+					<h5>Open Telemetry Application</h5>
+				</header>
+
+				<div class="w3-container">
+				  <p>Understanding Open Telemetry configuration using spring boot</p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-quarter w3-center w3-padding-small">
+			<div class="w3-light-grey w3-hover-shadow w3-padding-32 w3-center">
+				<header class="w3-container w3-gray">
+					<h5>Distributed tracing using Zipkin</h5>
+				</header>
+
+				<div class="w3-container">
+				  <p>Understanding Open Telemetry configuration using spring boot</p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-quarter w3-center w3-padding-small">
+			<div class="w3-light-grey w3-hover-shadow w3-padding-32 w3-center">
+				<header class="w3-container w3-gray">
+					<h5>Spring Security JWT</h5>
+				</header>
+
+				<div class="w3-container">
+				  <p>Understanding Open Telemetry configuration using spring boot</p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-quarter w3-center w3-padding-small">
+		<div class="w3-light-grey w3-hover-shadow w3-padding-32 w3-center">
+			<header class="w3-container w3-gray">
+				<h5>Fabric API demo</h5>
+			</header>
+
+			<div class="w3-container">
+			  <p>Understanding Open Telemetry configuration using spring boot</p>
+			</div>
+		</div>
+	</div>
+
+     </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End repository Section -->
+  
+<!-- Articles Section -->
+  <div class="w3-padding-16 w3-content w3-text-grey" id="articles">
+    <h2 class="w3-text-light-grey">My Articles</h2>
+    <hr style="width:200px" class="w3-opacity">
+	<h5>Topics I cover </h4>   
+      
+      On this site/medium, I write about:
+
+      <ul>
+        <li>Cloud-native development (microservices, Kubernetes, containers, etc.) </li>
+
+        <li>Observability - topics on Open Telemetry</li>
+
+        <li>API design, governance , RFC </li>
+
+        <li>Non technical stuff like philosophy , current matters , movies , personal etc </li>
+</ul>
+        
+          <h4>OK , but why ? </h4>
+          
+          
+      <p>
+      When I first started working in tech, I found many concepts difficult to understand. Stack Overflow was still very new back then, and books were often impenetrable.
+      </p>
+<p>
+      Thankfully, things have improved a lot! But a lot of technical documentation can still be frustratingly complex for beginners. It assumes that you already know the tool that you’re trying to learn.
+</p><p>
+      I decided to share my knowledge and teach everything I know. I try to write clear, simple tutorials about the tools I work with every day. I try to write the kind of tutorials that I’d like to read.
+</p>
+      So I write to improve my own understanding, to get better at writing, and to give back to the community so that you can understand and get better skills.
+
+      </p>
+	<div class="w3-row">
+		<div class="w3-third w3-center w3-padding-small">
+			<div class="w3-light-grey w3-hover-shadow w3-padding-32 w3-center">
+				<a href="https://nitin-rohidas.medium.com/introduction-to-opentelemetry-distributed-tracing-part-i-d1dc57d71a96" target="_blank"><img
+                src="img/articles/otel-1.jpeg" style="width:100%" alt=""></a>
+
+				<div class="w3-container">
+				  <p>Introduction to Open Telemtry & Distributed Tracing - Part 1</p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-third w3-center w3-padding-small">
+			<div class="w3-light-grey w3-hover-shadow w3-padding-32 w3-center">
+				<a href="https://nitin-rohidas.medium.com/introduction-to-opentelemetry-distributed-tracing-part-ii-7ddab4a4cf15"
+              target="_blank"><img src="img/articles/otel-2.jpeg" style="width:100%" alt=""></a>
+
+				<div class="w3-container">
+				  <p>Deep Dive in Open Telemetry with hands-on examples</p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-third w3-center w3-padding-small">
+			<div class="w3-light-grey w3-hover-shadow w3-padding-32 w3-center">
+				<a href="https://nitin-rohidas.medium.com/introduction-to-opentelemetry-distributed-tracing-part-iii-9b1bce59c1bd"
+              target="_blank"><img src="img/articles/otel-3.jpeg" style="width:100%" alt=""></a>
+
+				<div class="w3-container">
+				  <p>Understanding OpenTelemtry Collectors</p>
+				</div>
+			</div>
+		</div>
+		
+
+     </div>
+	 
+	 <div class="w3-row">
+		<div class="w3-third w3-center w3-padding-small">
+			<div class="w3-light-grey w3-hover-shadow w3-padding-32 w3-center">
+				<a href="https://medium.com/@nitin-rohidas/understanding-opentelemetry-collectors-f5d1e136536"
+              target="_blank"><img src="img/articles/otel-col.png" style="width:100%"  alt=""></a>
+
+				<div class="w3-container">
+				  <p>Understanding OpenTelemtry Collectors</p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-third w3-center w3-padding-small">
+			<div class="w3-light-grey w3-hover-shadow w3-padding-32 w3-center">
+				<a href="https://medium.com/@nitin-rohidas/10-commandments-of-an-ego-less-programmer-b9f9266760fb"
+              target="_blank"><img src="img/articles/commandments.jfif" style="width:100%" alt=""></a>
+
+				<div class="w3-container">
+				  <p>10 commandments of an Egoless Programmer</p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-third w3-center w3-padding-small">
+			<div class="w3-light-grey w3-hover-shadow w3-padding-32 w3-center">
+				<a href="https://medium.com/@nitin-rohidas/multitasking-is-your-way-to-being-dumb-517e521a8e19"
+              target="_blank"><img src="img/articles/multitasking.jfif" style="width:100%" alt=""></a>
+
+				<div class="w3-container">
+				  <p>MultiTasking is your way to being dumb</p>
+				</div>
+			</div>
+		</div>
+		
+
+     </div>
+    <div class="w3-row">
+		<div class="w3-third w3-center w3-padding-small">
+			<div class="w3-light-grey w3-hover-shadow w3-padding-32 w3-center">
+				<a href="https://medium.com/@nitin-rohidas/single-responsibility-principle-6ebfe37a8227"
+              target="_blank"><img src="img/articles/single.jfif" style="width:100%" alt=""></a>
+
+				<div class="w3-container">
+				  <p>Single Responsibility Principle</p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-third w3-center w3-padding-small">
+			<div class="w3-light-grey w3-hover-shadow w3-padding-32 w3-center">
+				<a href="https://nitin-rohidas.medium.com/make-an-online-resume-with-free-template-hosting-using-github-f4dac679bb9f"
+               target="_blank"><img src="img/articles/website.png" style="width:100%" alt=""></a>
+
+				<div class="w3-container">
+				  <p>How to make an online resume with free template hosting using github</p>
+				</div>
+			</div>
+		</div>
+		
+		
+
+     </div>
+    </div>
+  <!-- End Articles Section -->
+  <!-- Contact Section -->
+  <div class="w3-padding-16 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Pune, INDIA</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 8657995959</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: nitin.rohidas@gmail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
