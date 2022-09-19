@@ -8,6 +8,16 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <script src="https://kit.fontawesome.com/5ad8c9bfc3.js" crossorigin="anonymous"></script>
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
@@ -50,45 +60,51 @@ html {
   <!--<img src="img/portrait_Bokeh.png" style="width:100%">-->
   <a href="#" class="w3-bar-item w3-button">
     <i class="fa fa-home w3-large"></i>&nbsp;&nbsp;
-		HOME
+		Home
   </a>
   <a href="#about" class="w3-bar-item w3-button w3-padding-medium w3-hover-light-grey">
     <i class="fa-solid fa-user w3-large"></i>&nbsp;&nbsp;
-    ABOUT ME
+    About Me
   </a>
   <a href="#resume" class="w3-bar-item w3-button w3-padding-medium w3-hover-light-grey">
     <i class="fa fa-id-card-o w3-large"></i>&nbsp;&nbsp;
-    RESUME
+    Resume
   </a>
   <a href="#testimonials" class="w3-bar-item w3-button w3-padding-medium w3-hover-light-grey">
     <i class="fa fa-envelope w3-large"></i>&nbsp;&nbsp;
-    TESTIMONIALS
+    Testimonials
 	</a>
   <a href="#articles" class="w3-bar-item w3-button w3-padding-medium w3-hover-light-grey">
     <i class="fa-solid fa-newspaper w3-large"></i>&nbsp;&nbsp;
-    ARTICLES
+    Articles
 	</a>
 	<a href="#repository" class="w3-bar-item w3-button w3-padding-medium w3-hover-light-grey">
     <i class="fa-solid fa-code w3-large"></i>&nbsp;&nbsp;
-    REPOSITORY</a>
+    Repository</a>
+	<a href="#blog" class="w3-bar-item w3-button w3-padding-medium w3-hover-light-grey">
+    <i class="fa-solid fa-blog w3-large"></i>&nbsp;&nbsp;
+    Blog</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-medium w3-hover-light-grey">
     <i class="fa fa-address-book w3-large"></i>&nbsp;&nbsp;
-    CONTACT
+    Contact
   </a>  
 </div>
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>    
-	<a href="#testimonials" class="w3-bar-item w3-button" style="width:25% !important">RESUME</a>
-	<a href="#articles" class="w3-bar-item w3-button" style="width:25% !important">ARTICLES</a>
-	<a href="#repository" class="w3-bar-item w3-button" style="width:25% !important">REPOSITORY</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+
+
+  <div class="w3-sidebar w3-black w3-opacity w3-hover-opacity-off w3-center w3-hide-large w3-hide-medium w3-bar-block" id="mySidebar" >
+    <button onclick="w3_close()" class="w3-bar-item w3-yellow">Close &times;</button>
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>    
+	<a href="#testimonials" class="w3-bar-item w3-button">RESUME</a>
+	<a href="#articles" class="w3-bar-item w3-button" >ARTICLES</a>
+	<a href="#repository" class="w3-bar-item w3-button" >REPOSITORY</a>
+    <a href="#contact" class="w3-bar-item w3-button" >CONTACT</a>
   </div>
-</div>
+
 
 <!-- Page Content -->
+ <button class="w3-button w3-yellow" onclick="w3_open()">☰</button>
 <div class="w3-padding-large" id="main">
 <br><br>
   <!-- Header/Home -->
@@ -99,7 +115,7 @@ html {
   </header>
 
   <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-32 w3-top-margin-32" id="about">
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32 w3-top-margin-32 w3-animate-top" id="about">
   <br> 
     <h2 class="w3-text-light-grey w3-hover-text-yellow">About Me</h2>
     <hr style="width:200px" class="w3-opacity">
@@ -432,132 +448,8 @@ I’d gladly work with Nitin again.</p>
   </div>
   </div>
   
-  <!-- Repository Section -->
-  <div class="w3-padding-64 w3-content w3-hide-small" id="repository">
+
   
-    <h2 class="w3-text-theme-l5">My Repositories</h2>
-    <hr style="width:200px" class="w3-opacity">
-	<div class="w3-cell-row">
-		<div class=" w3-container w3-padding-small w3-cell">
-		<a href="https://github.com/metalhead44/otel-spring-tracing" >
-			<div class="w3-theme-l1 w3-hover-shadow w3-center w3-card">
-			
-				<header class="w3-container w3-theme-l5">
-					<h5>Open Telemetry Application</h5>
-				</header>
-
-				<div class="w3-container">
-				  <p>Understanding Open Telemetry configuration using Spring boot</p>
-				</div>				
-			</div>
-			</a>
-		</div>
-		<div class=" w3-container w3-center w3-padding-small w3-cell">
-		<a href="https://github.com/metalhead44/spring-cloud-sleuth-zipkin">
-			<div class="w3-theme-l1 w3-hover-shadow  w3-center w3-card">
-				<header class="w3-container w3-theme-l5">
-					<h5>Distributed tracing using Zipkin</h5>
-				</header>
-
-				<div class="w3-container">
-				  <p>Log Tracing with Spring Clouth Sleuth using Spring boot</p>
-				</div>
-			</div>
-			</a>
-		</div>
-		<div class=" w3-container w3-center w3-padding-small w3-cell ">
-		<a href="https://github.com/metalhead44/spring-security-jwt">		
-			<div class="w3-theme-l1 w3-hover-shadow  w3-center w3-card">
-				<header class="w3-container w3-theme-l5">
-					<h5>Spring Security JWT using Spring boot</h5>
-				</header>
-
-				<div class="w3-container">
-				  <p>A project demonstrating Spring security JWT usage using spring boot</p>
-				</div>
-			</div>
-			</a>
-		</div>
-		<div class=" w3-container w3-center w3-padding-small w3-cell">
-		<a href="https://github.com/metalhead44/fabric-demo">	
-		<div class="w3-theme-l1 w3-hover-shadow w3-center w3-card">		
-			<header class="w3-container w3-theme-l5">
-				<h5>Fabric API
-				demo for kubernetes</h5>
-			</header>
-
-			<div class="w3-container">
-			  <p>A demo project which uses Kubernetes Fabric API to get metdata about the cluster</p>
-			</div>
-		</div>
-		</a>
-	  </div>
-	  </div>
-     </div>
-    <!-- End photo grid -->
-    <div class="w3-padding-16 w3-content w3-hide-large w3-hide-medium" id="repository">
-    <h2 class="w3-text-light-grey">My Repositories</h2>
-    <hr style="width:200px" class="w3-opacity">
-	<div class="w3-row">
-		<div class="w3-quarter w3-center w3-padding-small">
-			<a href="https://github.com/metalhead44/otel-spring-tracing" >
-			<div class="w3-theme-l1 w3-hover-shadow w3-padding-32 w3-center w3-card">
-			
-				<header class="w3-container w3-theme-l5">
-					<h5>Open Telemetry Application</h5>
-				</header>
-
-				<div class="w3-container">
-				  <p>Understanding Open Telemetry configuration using Spring boot</p>
-				</div>				
-			</div>
-			</a>
-		</div>
-		<div class="w3-quarter w3-center w3-padding-small">
-			<a href="https://github.com/metalhead44/spring-cloud-sleuth-zipkin">
-			<div class="w3-theme-l1 w3-hover-shadow  w3-padding-32 w3-center w3-card">
-				<header class="w3-container w3-theme-l5">
-					<h5>Distributed tracing using Zipkin</h5>
-				</header>
-
-				<div class="w3-container">
-				  <p>Log Tracing with Spring Clouth Sleuth using Spring boot</p>
-				</div>
-			</div>
-			</a>
-		</div>
-		<div class="w3-quarter w3-center w3-padding-small">
-			<a href="https://github.com/metalhead44/spring-security-jwt">		
-			<div class="w3-theme-l1 w3-hover-shadow w3-padding-32 w3-center w3-card">
-				<header class="w3-container w3-theme-l5">
-					<h5>Spring Security JWT using Spring boot</h5>
-				</header>
-
-				<div class="w3-container">
-				  <p>A project demonstrating Spring security JWT usage using spring boot</p>
-				</div>
-			</div>
-			</a>
-		</div>
-		<div class="w3-quarter w3-center w3-padding-small">
-		<a href="https://github.com/metalhead44/fabric-demo">	
-		<div class="w3-theme-l1 w3-hover-shadow  w3-padding-32 w3-center w3-card">		
-			<header class="w3-container w3-theme-l5">
-				<h5>Fabric API
-				demo for kubernetes</h5>
-			</header>
-
-			<div class="w3-container">
-			  <p>A demo project which uses Kubernetes Fabric API to get metdata about the cluster</p>
-			</div>
-		</div>
-		</a>
-	</div>
-
-     </div>
-    <!-- End photo grid -->
-    </div>
-  <!-- End repository Section -->
   
 <!-- Articles Section -->
   <div class="w3-padding-16 w3-content w3-text-grey" id="articles">
@@ -687,7 +579,168 @@ I’d gladly work with Nitin again.</p>
      </div>
     </div>
   <!-- End Articles Section -->
+    <!-- Repository Section -->
+  <div class="w3-padding-64 w3-content w3-hide-small" id="repository">
+  
+    <h2 class="w3-text-theme-l5">My Repositories</h2>
+    <hr style="width:200px" class="w3-opacity">
+	<div class="w3-cell-row">
+		<div class=" w3-container w3-padding-small w3-cell">
+		<a href="https://github.com/metalhead44/otel-spring-tracing" >
+			<div class="w3-theme-l1 w3-hover-shadow w3-center w3-card">
+			
+				<header class="w3-container w3-theme-l5">
+					<h5>Open Telemetry Application</h5>
+				</header>
+
+				<div class="w3-container">
+				  <p>Understanding Open Telemetry configuration using Spring boot</p>
+				</div>				
+			</div>
+			</a>
+		</div>
+		<div class=" w3-container w3-center w3-padding-small w3-cell">
+		<a href="https://github.com/metalhead44/spring-cloud-sleuth-zipkin">
+			<div class="w3-theme-l1 w3-hover-shadow  w3-center w3-card">
+				<header class="w3-container w3-theme-l5">
+					<h5>Distributed tracing using Zipkin</h5>
+				</header>
+
+				<div class="w3-container">
+				  <p>Log Tracing with Spring Clouth Sleuth using Spring boot</p>
+				</div>
+			</div>
+			</a>
+		</div>
+		<div class=" w3-container w3-center w3-padding-small w3-cell ">
+		<a href="https://github.com/metalhead44/spring-security-jwt">		
+			<div class="w3-theme-l1 w3-hover-shadow  w3-center w3-card">
+				<header class="w3-container w3-theme-l5">
+					<h5>Spring Security JWT using Spring boot</h5>
+				</header>
+
+				<div class="w3-container">
+				  <p>A project demonstrating Spring security JWT usage using spring boot</p>
+				</div>
+			</div>
+			</a>
+		</div>
+		<div class=" w3-container w3-center w3-padding-small w3-cell">
+		<a href="https://github.com/metalhead44/fabric-demo">	
+		<div class="w3-theme-l1 w3-hover-shadow w3-center w3-card">		
+			<header class="w3-container w3-theme-l5">
+				<h5>Fabric API
+				demo for kubernetes</h5>
+			</header>
+
+			<div class="w3-container">
+			  <p>A demo project which uses Kubernetes Fabric API to get metdata about the cluster</p>
+			</div>
+		</div>
+		</a>
+	  </div>
+	  </div>
+	  <br>
+	  <div class="w3-row">
+			<div class=w3-half>
+		<div class=" w3-container w3-center w3-padding-small w3-cell">
+		<a href="https://github.com/metalhead44/muserver-otel">	
+		<div class="w3-theme-l1 w3-hover-shadow w3-center w3-card">		
+			<header class="w3-container w3-theme-l5">
+				<h5>MUserver compatibility for OpenTelemtry</h5>
+			</header>
+
+			<div class="w3-container">
+			  <p>Simple Muserver code to test the OpenTelemtry instruentation for Muserve which is backed by Netty</p>
+			</div>
+		</div>
+		</a>
+	  </div>
+	 <div class=" w3-container w3-center w3-padding-small w3-cell">
+		<a href="https://github.com/metalhead44/muserver-otel">	
+		<div class="w3-theme-l1 w3-hover-shadow w3-center w3-card">		
+			<header class="w3-container w3-theme-l5">
+				<h5>MUserver compatibility for OpenTelemtry</h5>
+			</header>
+
+			<div class="w3-container">
+			  <p>Simple Muserver code to test the OpenTelemtry instruentation for Muserve which is backed by Netty</p>
+			</div>
+		</div>
+		</a>
+	  </div>
+			</div>	
+			<div class=w3-half>
+
+			</div>				
+     </div>
+	 </div>
+    <!-- End photo grid -->
+    <div class="w3-padding-16 w3-content w3-hide-large w3-hide-medium" id="repository">
+    <h2 class="w3-text-light-grey">My Repositories</h2>
+    <hr style="width:200px" class="w3-opacity">
+	<div class="w3-row">
+		<div class="w3-quarter w3-center w3-padding-small">
+			<a href="https://github.com/metalhead44/otel-spring-tracing" >
+			<div class="w3-theme-l1 w3-hover-shadow w3-padding-32 w3-center w3-card">
+			
+				<header class="w3-container w3-theme-l5">
+					<h5>Open Telemetry Application</h5>
+				</header>
+
+				<div class="w3-container">
+				  <p>Understanding Open Telemetry configuration using Spring boot</p>
+				</div>				
+			</div>
+			</a>
+		</div>
+		<div class="w3-quarter w3-center w3-padding-small">
+			<a href="https://github.com/metalhead44/spring-cloud-sleuth-zipkin">
+			<div class="w3-theme-l1 w3-hover-shadow  w3-padding-32 w3-center w3-card">
+				<header class="w3-container w3-theme-l5">
+					<h5>Distributed tracing using Zipkin</h5>
+				</header>
+
+				<div class="w3-container">
+				  <p>Log Tracing with Spring Clouth Sleuth using Spring boot</p>
+				</div>
+			</div>
+			</a>
+		</div>
+		<div class="w3-quarter w3-center w3-padding-small">
+			<a href="https://github.com/metalhead44/spring-security-jwt">		
+			<div class="w3-theme-l1 w3-hover-shadow w3-padding-32 w3-center w3-card">
+				<header class="w3-container w3-theme-l5">
+					<h5>Spring Security JWT using Spring boot</h5>
+				</header>
+
+				<div class="w3-container">
+				  <p>A project demonstrating Spring security JWT usage using spring boot</p>
+				</div>
+			</div>
+			</a>
+		</div>
+		<div class="w3-quarter w3-center w3-padding-small">
+		<a href="https://github.com/metalhead44/fabric-demo">	
+		<div class="w3-theme-l1 w3-hover-shadow  w3-padding-32 w3-center w3-card">		
+			<header class="w3-container w3-theme-l5">
+				<h5>Fabric API
+				demo for kubernetes</h5>
+			</header>
+
+			<div class="w3-container">
+			  <p>A demo project which uses Kubernetes Fabric API to get metdata about the cluster</p>
+			</div>
+		</div>
+		</a>
+	</div>
+
+     </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End repository Section -->
   <!-- Contact Section -->
+  <br>  <br>  <br>  <br><br>  <br>
   <div class="w3-padding-16 w3-content w3-text-grey" id="contact">
   <br>
     <h2 class="w3-text-light-grey">Contact Me</h2>
