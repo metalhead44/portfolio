@@ -57,8 +57,8 @@ html {
 </head>
 <body class="w3-theme-d2" onload="resetmenu()">
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<div class="w3-navbar  w3-hide-small w3-center w3-theme w3-top" id="navbar">
+
+<div class="w3-navbar  w3-hide-small w3-center w3-theme w3-top w3-margin-top" id="navbar">
   <!-- Avatar image in top left corner -->
   <!--<img src="img/portrait_Bokeh.png" style="width:100%">-->
   <a href="#" class="w3-bar-item w3-button">
@@ -96,7 +96,7 @@ html {
 
 
   <div class="w3-sidebar w3-bar-block w3-black w3-center w3-hide-large w3-hide-medium" id="mySidebar" >
-    <button onclick="w3_close()" class="w3-bar-item w3-yellow">Close &times;</button>
+    <button onclick="w3_close()" class="w3-bar-item w3-yellow ">Close &times;</button>
     <a href="#" class="w3-bar-item w3-button w3-hover-yellow">HOME</a>
     <a href="#about"onclick="resetmenu()" class="w3-bar-item w3-button w3-hover-yellow">ABOUT</a>
     <a href="#resume" onclick="resetmenu()" class="w3-bar-item w3-button w3-hover-yellow">RESUME</a>    
@@ -108,7 +108,7 @@ html {
 
 
 <!-- Page Content -->
- <button class="w3-button w3-yellow" onclick="w3_open()">☰</button>
+ <button class="w3-button w3-yellow w3-hide-large w3-hide-medium" onclick="w3_open()">☰</button>
 <div class="w3-padding-large" id="main">
 <br><br>
   <!-- Header/Home -->
